@@ -28,9 +28,9 @@ try:
     aws_secret_access_key="Secret key AWS",
     )
     s3_1 = session.client('s3')
-    print("connect db dan amazon sukses")
+    print("Connect to database and amazon success")
 except:
-    print("connect db dan amazon gagal")
+    print("Connect to database and amazon failed")
    
 # Input variable and input date
 try:
@@ -50,9 +50,9 @@ try:
         dates = [str(input('input tanggal: '))]
     else:
         print('wrong input')
-    print("input variable dan open code sukses")
+    print("Load variable success")
 except:
-    print("input variable dan open code gagal")
+    print("Load variable failed")
     
 # Load data to S3
 try:
